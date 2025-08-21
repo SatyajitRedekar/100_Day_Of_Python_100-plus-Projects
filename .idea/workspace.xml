@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e12e51d-fc81-42fa-bcfc-7ea0eac97df1" name="Changes" comment="fist come">
-      <change afterPath="$PROJECT_DIR$/day-19/etch-a-sketch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day-19/turtal_race.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day-20/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-20/harry_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-20/snake.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day-19/rough.py" beforeDir="false" afterPath="$PROJECT_DIR$/day-19/rough.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-20/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day-20/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,8 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.etch-a-sketch.executor": "Run",
+    "Python.harry_class.executor": "Run",
+    "Python.main.executor": "Run",
     "Python.rough.executor": "Run",
     "Python.turtal_race.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
