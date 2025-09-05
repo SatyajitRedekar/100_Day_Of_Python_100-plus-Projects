@@ -12,11 +12,17 @@ class Snake:
         self.head = self.segment[0]
     def create_snake(self):
         for cord in SNAKE_BODY:
-            new_turtle = Turtle(shape="square")
-            new_turtle.penup()
-            new_turtle.color("white")
-            new_turtle.goto(cord)
-            self.segment.append(new_turtle)
+           self.add_segment(cord)
+
+    def add_segment(self, position):
+        new_turtle = Turtle(shape="square")
+        new_turtle.penup()
+        new_turtle.color("white")
+        new_turtle.goto(position)
+        self.segment.append(new_turtle)
+
+    def extend(self):
+        self.add_segment(self.segment[-1].position())
 
     def turn_up(self):
         if self.head.heading() != DOWN :
@@ -39,5 +45,5 @@ class Snake:
             x = self.segment[segment - 1].xcor()
             y = self.segment[segment - 1].ycor()
             self.segment[segment].goto(x, y)
-        self.head.fd(20)
+        self.head.fd(10)
 
