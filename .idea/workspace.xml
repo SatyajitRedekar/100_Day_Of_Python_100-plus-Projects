@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e12e51d-fc81-42fa-bcfc-7ea0eac97df1" name="Changes" comment="day - 20">
-      <change afterPath="$PROJECT_DIR$/day-20/food.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day-20/scoreboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day-21/inheritanc .py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day-21/slicing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whatsapp_mas_sender/main.py" afterDir="false" />
+    <list default="true" id="3e12e51d-fc81-42fa-bcfc-7ea0eac97df1" name="Changes" comment="day - 21">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-22/ball.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-22/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-22/paddle_one.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-22/paddle_two.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-22/score_board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day-20/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day-20/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day-20/snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/day-20/snake.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,12 +55,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.ball.executor": "Run",
     "Python.etch-a-sketch.executor": "Run",
     "Python.food.executor": "Run",
     "Python.harry_class.executor": "Run",
     "Python.inheritanc .executor": "Run",
     "Python.main.executor": "Run",
+    "Python.paddle_one.executor": "Run",
+    "Python.paddle_two.executor": "Run",
     "Python.rough.executor": "Run",
+    "Python.score_board.executor": "Run",
     "Python.scoreboard.executor": "Run",
     "Python.slicing.executor": "Run",
     "Python.snake.executor": "Run",
@@ -69,6 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/satya/OneDrive/Desktop/100_Days_Of_Python(100+projects)/day-19"
@@ -123,7 +127,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755790343083</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="day - 21">
+      <option name="closed" value="true" />
+      <created>1757051313451</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1757051313451</updated>
+    </task>
+    <task id="LOCAL-00005" summary="day - 21">
+      <option name="closed" value="true" />
+      <created>1757051499519</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1757051499519</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +172,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fist come" />
     <MESSAGE value="day - 20" />
-    <option name="LAST_COMMIT_MESSAGE" value="day - 20" />
+    <MESSAGE value="day - 21" />
+    <option name="LAST_COMMIT_MESSAGE" value="day - 21" />
   </component>
 </project>
