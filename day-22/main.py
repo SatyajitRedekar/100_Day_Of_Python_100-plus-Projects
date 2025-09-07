@@ -48,9 +48,8 @@ screen.onkey(fun=player_two.move_up,key="Up")
 screen.onkey(fun=player_two.move_down,key="Down")
 
 game_is_on = True
-i = 0.1
 while game_is_on:
-    time.sleep(i)
+    time.sleep(ball.move_speed)
     screen.update()
     ball.move()
 
@@ -63,10 +62,11 @@ while game_is_on:
         ball.bounce("x_move")
     elif ball.xcor() > 380 :
         score.update_score("p1")
-        ball.goto(0, 0)
+        ball.reset_ball()
     elif ball.xcor() < -380 :
         score.update_score("p2")
-        ball.goto(0, 0)
+        ball.reset_ball()
+
 
 
 

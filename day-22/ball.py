@@ -9,6 +9,7 @@ class Ball(Turtle):
         self.color("white")
         self.penup()
         self.speed("fastest")
+        self.move_speed = 0.1
         self.x_move = 10
         self.y_move = 10
 
@@ -24,5 +25,11 @@ class Ball(Turtle):
             self.y_move *= -1
         if move == "x_move" :
             self.x_move *= -1
+            self.move_speed *= 0.9
         print(f"after the bounce : {self.y_move} ")
+
+    def reset_ball(self):
+        self.goto(0,0)
+        self.bounce("x_move")
+        self.move_speed = 0.1
 
