@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e12e51d-fc81-42fa-bcfc-7ea0eac97df1" name="Changes" comment="day - 22">
-      <change afterPath="$PROJECT_DIR$/day-23/car_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day-23/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day-23/player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day-23/scoreboard.py" afterDir="false" />
+    <list default="true" id="3e12e51d-fc81-42fa-bcfc-7ea0eac97df1" name="Changes" comment="day - 23">
+      <change afterPath="$PROJECT_DIR$/day-24/file_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-24/file_handling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-24/func_text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-24/snake_with_highscore/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-24/snake_with_highscore/food.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-24/snake_with_highscore/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-24/snake_with_highscore/scoreboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-24/snake_with_highscore/snake.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-24/text.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +61,7 @@
     "Python.ball.executor": "Run",
     "Python.car_manager.executor": "Run",
     "Python.etch-a-sketch.executor": "Run",
+    "Python.file_functions.executor": "Run",
     "Python.food.executor": "Run",
     "Python.harry_class.executor": "Run",
     "Python.inheritanc .executor": "Run",
@@ -84,6 +90,7 @@
       <recent name="C:\Users\satya\OneDrive\Desktop\100_Days_Of_Python(100+projects)\day-17" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\satya\OneDrive\Desktop\100_Days_Of_Python(100+projects)\day-24\snake_with_highscore" />
       <recent name="C:\Users\satya\OneDrive\Desktop\100_Days_Of_Python(100+projects)" />
     </key>
   </component>
@@ -158,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757214966624</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="day - 23">
+      <option name="closed" value="true" />
+      <created>1758118139340</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758118139340</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +204,8 @@
     <MESSAGE value="day - 20" />
     <MESSAGE value="day - 21" />
     <MESSAGE value="day - 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="day - 22" />
+    <MESSAGE value="day - 23" />
+    <option name="LAST_COMMIT_MESSAGE" value="day - 23" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
