@@ -2,7 +2,6 @@ import turtle
 from turtle import Turtle
 import pandas as pd
 
-# --- Setup ---
 IMAGE = "indian_map.gif"
 screen = turtle.Screen()
 screen.title("Indian States Game")
@@ -15,9 +14,7 @@ turtle.shape(IMAGE)
 # todo this code is for detecting the coordinate of the place on map
 # def get_mouse_click_coordinate(x, y):
 #     print(x, y)
-#
 # turtle.onscreenclick(get_mouse_click_coordinate)
-#
 # turtle.mainloop()
 
 # --- Load Data ---
