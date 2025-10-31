@@ -3,3 +3,23 @@
 /.idea
 /day-25/indian-states-game/dist/
 /day-25/indian-states-game/build/
+# Ignore Python build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore build folders and executables
+build/
+dist/
+*.spec
+*.exe
+*.zip
+*.pkg
+*.toc
+*.pyz
+
+# Ignore macOS and IDE files
+.DS_Store
+.idea/
+
