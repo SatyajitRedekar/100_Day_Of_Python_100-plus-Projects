@@ -4,11 +4,12 @@ from PIL import Image
 PINK = "#e2979c"
 RED = "#e7305b"
 GREEN = "#9bdeac"
-YELLOW = "#f7f5dd"
+YELLOW = "#DCC7AA"
 FONT_NAME = "Boulder"
 WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
+Lap = 0
 
 # ---------------------------- TIMER RESET ------------------------------- # 
 
@@ -86,22 +87,13 @@ canvas = Canvas(width=160,height=160, highlightthickness=0)
 canvas.create_image(70,80, image=Trophy_image)
 canvas.place(x=700,y=324)
 
-# tomato showing
-from PIL import ImageTk  # import this at the top with other imports
+tomato_emoji = Label(
+    text=f"Laps = {Lap}/5 ",
+    font=("Segoe UI Emoji", 20),  # larger size for clarity
+    bg=YELLOW,
+)
+tomato_emoji.place(x=700, y=525)
 
-tint_color = "#777C6D"
-color_image = Image.new("RGBA", original.size, tint_color)
-blended = Image.blend(original, color_image, alpha=0.6)
-
-# Convert to Tkinter-compatible image
-tk_image = ImageTk.PhotoImage(blended)
-
-canvas = Canvas(width=200, height=223, highlightthickness=0)
-canvas.create_image(100, 112, image=tk_image)
-canvas.place(x=100, y=324)
-
-# Prevent garbage collection
-canvas.image = tk_image
 
 
 window.mainloop()
