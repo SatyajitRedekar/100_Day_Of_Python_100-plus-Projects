@@ -94,6 +94,6 @@ tomato_emoji = Label(
 )
 tomato_emoji.place(x=700, y=525)
 
-
+count = 0
 
 window.mainloop()
