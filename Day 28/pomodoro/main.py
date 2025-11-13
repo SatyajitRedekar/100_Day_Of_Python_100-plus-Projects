@@ -1,5 +1,6 @@
 from tkinter import *
 from PIL import Image
+import math
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -9,13 +10,53 @@ FONT_NAME = "Boulder"
 WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
-Lap = 0
+lap = 0
+GAME_ON = True
 
 # ---------------------------- TIMER RESET ------------------------------- # 
 
-# ---------------------------- TIMER MECHANISM ------------------------------- # 
+# ---------------------------- TIMER MECHANISM ------------------------------- #
+def start_timer():
+    global lap
+    global GAME_ON
+    work_sec = WORK_MIN * 60
+    short_break = SHORT_BREAK_MIN * 60
+    long_break = LONG_BREAK_MIN * 60
 
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
+    while lap < 8 :
+        if lap == 0 or lap % 2 == 1 :
+            count_down(work_sec)
+        elif lap % 2 == 0 :
+            count_down(short_break)
+        elif lap == 8 :
+            count_down(long_break)
+        lap = lap + 1
+
+
+# ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
+def count_down(count):
+
+    count_min = math.floor(count / 60)
+    count_sec = count % 60
+
+    if len(str(count_min)) == 1 :
+        count_min = f"0{count_min}"
+
+    if len(str(count_sec)) == 1 :
+        count_sec = f"0{count_sec}"
+
+    tomato_canvas.itemconfig(timer_window, text=f"{count_min}:{count_sec}")
+
+    print(count)
+    if count > 0:
+        window.after(10, count_down, count - 1)
+
+    tomato_emoji = Label(
+        text=f"Laps = {lap}/5 ",
+        font=("Segoe UI Emoji", 20),  # larger size for clarity
+        bg=YELLOW,
+    )
+    tomato_emoji.place(x=700, y=525)
 
 # ---------------------------- UI SETUP ------------------------------- #
 # Set window size (width x height)
@@ -57,15 +98,15 @@ Trophy_image = PhotoImage(file="Trophy.png")
 original = Image.open("tomato.png").convert("RGBA")
 
 # Image rendering
-canvas = Canvas(width=700,height=600, highlightthickness=0)
-canvas.create_image(350,300, image=tomato_stage_5)
-canvas.grid(row=0,column=0)
+tomato_canvas = Canvas(width=700, height=600, highlightthickness=0, bg=YELLOW)
+tomato_canvas.create_image(350, 300, image=tomato_stage_0)
+tomato_canvas.grid(row=0, column=0)
 
 # Text on the image
-canvas.create_text(360,100, text="00:00",font=(FONT_NAME,50,"bold"), fill="white")
+timer_window = tomato_canvas.create_text(360,100, text="00:00",font=(FONT_NAME,50,"bold"), fill="white")
 
 # buttons showing
-button_start = Button(text="start",width=10, font=(FONT_NAME,15), highlightthickness=0)
+button_start = Button(text="start",width=10, font=(FONT_NAME,15), highlightthickness=0,command=start_timer)
 button_start.place(x=50,y=550)
 
 button_stop = Button(text="pause",width=10, font=(FONT_NAME,15), highlightthickness=0)
@@ -75,25 +116,19 @@ button_reset = Button(text="reset",width=10, font=(FONT_NAME,15), highlightthick
 button_reset.place(x=550,y=550)
 
 # trees showing
-canvas = Canvas(width=160,height=160, highlightthickness=0)
-canvas.create_image(70,80, image=Trophy_image)
-canvas.place(x=700,y=0)
+trophy_canvas1 = Canvas(width=160, height=160, highlightthickness=0, bg=YELLOW)
+trophy_canvas1.create_image(70, 80, image=Trophy_image)
+trophy_canvas1.place(x=700, y=0)
 
-canvas = Canvas(width=160,height=160, highlightthickness=0)
-canvas.create_image(70,80, image=Trophy_image)
-canvas.place(x=700,y=162)
+trophy_canvas2 = Canvas(width=160, height=160, highlightthickness=0, bg=YELLOW)
+trophy_canvas2.create_image(70, 80, image=Trophy_image)
+trophy_canvas2.place(x=700, y=162)
 
-canvas = Canvas(width=160,height=160, highlightthickness=0)
-canvas.create_image(70,80, image=Trophy_image)
-canvas.place(x=700,y=324)
+trophy_canvas3 = Canvas(width=160, height=160, highlightthickness=0, bg=YELLOW)
+trophy_canvas3.create_image(70, 80, image=Trophy_image)
+trophy_canvas3.place(x=700, y=324)
 
-tomato_emoji = Label(
-    text=f"Laps = {Lap}/5 ",
-    font=("Segoe UI Emoji", 20),  # larger size for clarity
-    bg=YELLOW,
-)
-tomato_emoji.place(x=700, y=525)
 
-count = 0
+
 
 window.mainloop()
